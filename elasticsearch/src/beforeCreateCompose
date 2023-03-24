@@ -1,0 +1,10 @@
+进入文件夹内，创建数据卷文件夹
+ [root@localhost docker]# cd es/ mkdir data mkdir plugins
+ 因为这里是挂载在data 和plugins里面
+
+ 需要给这两个文件夹赋予权限，否则会导致权限不够的问题，导致启动失败
+ [root@localhost es]# chmod 777 data
+ [root@localhost es]# chmod 777 plugins/
+
+
+ 然后就可以创建相对应的compose文件了

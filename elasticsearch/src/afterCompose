@@ -1,0 +1,8 @@
+# 添加一个IK插件的步骤
+1. 进入plugins目录，这里我的目录是在 /var/lib/docker/es/plugins
+2. 创建ik : mkdir ik
+3. 进入ik : cd ik
+4. 下载插件：
+wget https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.7.0/elasticsearch-analysis-ik-7.7.0.zip
+
+5. 解压插件: unzip elasticsearch-analysis-ik-7.7.0.zip

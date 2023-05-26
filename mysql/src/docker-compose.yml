@@ -1,0 +1,12 @@
+version: '3'
+services:
+  mysql:
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_USER: 'multisend'
+      MYSQL_PASS: '123456'
+    image: "docker.io/mysql:latest"
+    container_name: mysql
+    restart: always
+    volumes:
+      - "./conf/my.cnf:/etc/my.cnf"

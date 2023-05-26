@@ -1,0 +1,18 @@
+# 准备工作
+# 进入docker所在的位置，这里我是先
+cd /var/lib/docker/mydockerCompose/
+# 创建mysql
+mkdir mysql
+cd mysql
+# 再创建一个目录
+mkdir conf
+cd conf
+vim my.cnf
+cd ..
+vim docker-compose up -d
+
+# 上面之后就是启动mysql成功了，进入客户端
+docker exec -it mysql bash
+mysql -u root -p
+#这个会让你输入密码 我要输入的是root 就能成功进入客户端了，里面的操作就是mysql
+
